@@ -16,7 +16,7 @@ app.use(category);
 app.use(product);
 app.use(order);
 
-connect(`mongodb://${DB_MONGO_HOST}:${DB_MONGO_PORT}/${DB_MONGO_DATABASE}`)
+connect(`mongodb+srv://kevinalzate10290:@cluster0.mjzof.mongodb.net/`)
 .then(() => {
     console.log("_Conexión establecida_");
     app.server = app.listen(SERVER_PORT ,() => {
